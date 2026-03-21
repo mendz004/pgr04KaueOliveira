@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(3, 3, 3, 0.7);
+}
+
+header {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+body {
+    min-height: 100vh;
+    background-image: url("../images/PaginaInicial.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
