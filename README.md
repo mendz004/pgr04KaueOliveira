@@ -5,17 +5,24 @@ Este projeto está organizado da seguinte forma:
 Contém a base estrutural do projeto.
 
 ### assets 
-Arquivos estáticos utilizados na aplicação 
+Arquivos estáticos utilizados na aplicação.
 
 - css
- - `style.css`: Arquivo responsavel pela estilização da página
+ - `fonts.css`: Arquivo responsavel pela estilização das fontes da pagina.
+ - `elements.css`: Arquivo responsavel pela estilização dos elementos da pagina EX: imagens.
 
  - images
-  - `Favicon.png`: Ícone exibido na aba do navegador
-  - `PaginaInicial.png`: Imagem utilizada na página inicial
+  - `Favicon.png`: Ícone exibido na aba do navegador.
+  - `PaginaInicial.png`: Imagem utilizada na página inicial.
 
 ### pages
-- `index.html`: Página principal do projeto
+- `index.html`: Página principal do projeto.
+
+## atividades
+Pasta para organizar as atividades.
+
+### pages 
+Onde irá ficar ás páginas das atividades.
 
 ## README.md
-Arquivo com a documentação e descrição da estrutura do projeto
+Arquivo com a documentação e descrição da estrutura do projeto.

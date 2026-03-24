@@ -4,27 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Estilização do título principal */
-h1 {
-    font-size: 2.5rem;
-    color: black;
-}
-/* Estilização dos parágrafos */
-p {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 4px rgba(3, 3, 3, 0.7);
-}
 
-header {
-    text-align: center;
-    padding-top: 100px;
-    color: white;
-}
 body {
     min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
     background-image: url("../images/PaginaInicial.jpg"); /* Define uma imagem de fundo */
     background-size: cover;  /* Faz a imagem cobrir toda a tela */
     background-position: center;  /* Centraliza a imagem */
     background-repeat: no-repeat;   /* Evita repetição da imagem */
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

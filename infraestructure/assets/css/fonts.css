@@ -1,0 +1,70 @@
+/* Reset básico para remover margens e espaçamentos padrão do navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilização do título principal */
+h1 {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    animation: slideInDown 0.8s ease-out;
+}
+
+/* Tagline - subtítulo atrativo */
+.tagline {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+/* Animação deslizar para baixo */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação deslizar para cima */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilização dos parágrafos */
+p {
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 4px rgba(3, 3, 3, 0.7);
+}
+
+header {
+    text-align: center;
+    padding: 120px 20px 80px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
