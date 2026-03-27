@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+    
+<!--CSS interno-->
+    <style>
+        h1 {
+           color: black;
+        }
+        .tagline {
+            color: black;
+        }
+        audio {
+            margin: 30px;
+        }
+        iframe {
+            margin: 30px;
+        }
+        body {
+            background-color: rgb(250, 245, 239);
+        }
+    </style>
+
+    <!-- Importa um arquivo FONTS.CSS externo para estilização das fontes -->
+    <link rel="stylesheet" href="../../infraestructure/assets/css/fonts.css">
+     <!-- Define o ícone da aba (favicon) do site -->
+    <link rel="shortcut icon" href="../../infraestructure/assets/images/Favicon.png" 
+    type="image/png">
+
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Atividade 04</h1>
+        
+        <p class="tagline">Nessa atividade, aprenderemos como inserir um áudio e um video em uma pagina HTML.</p>
+            
+        <p>_____________________________________________________________________________________________________</p>
+            
+            
+    </header>
+<!-- inserindo áudio na página-->
+    <h2>Inserindo Áudio</h2>
+    
+         <audio preload="metadata" controls autoplay>
+            <source src="../../infraestructure/assets/midia/audio-html.mp3" type="audio/mpeg">
+            <p>Seu navegador não suporta o elemento de áudio. <a href="../../infraestructure/assets/midia/audio-html.mp3"
+                download="audio-html.mp3" type="audio/mpeg"></a></p>
+         </audio>
+    <!-- inserindo vídeo na página -->
+         <h2>Inserindo Vídeo</h2>
+
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/39IXFjD291U?si=9HvMdxXxIjANXkr7" 
+           title="YouTube video player" frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

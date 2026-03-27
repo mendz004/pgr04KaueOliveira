@@ -7,21 +7,22 @@
 /* Estilização do título principal */
 h1 {
     font-size: 3.5rem;
-    color: white;
     font-weight: 700;
-    text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.6);
     margin-bottom: 15px;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(3, 3, 3, 0.7);
     animation: slideInDown 0.8s ease-out;
+}
+
+ h2 {
+            margin-left: 10px;
 }
 
 /* Tagline - subtítulo atrativo */
 .tagline {
     font-size: 1.5rem;
-    color: #e0e0e0;
     font-weight: 300;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     animation: slideInUp 0.8s ease-out 0.2s both;
 }
 
@@ -52,31 +53,12 @@ h1 {
 /* Estilização dos parágrafos */
 p {
     font-size: 1.7rem;
-    text-shadow: 1px 1px 4px rgba(3, 3, 3, 0.7);
-}
-
-/* Estiliza listas ordenadas (ol) */
-ol {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #e4e0e0;
-    text-shadow: 2px 2px 4px black;
-}
-
-/* Estiliza listas não ordenadas (ul) */
-ul {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #e4e0e0;
-    text-shadow: 2px 2px 4px black;
 }
 
 /* Estilização do cabeçalho da página */
 header {
     text-align: center;
     padding: 120px 20px 80px;
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -84,51 +66,4 @@ header {
     align-items: center;
 }
 
-/* Container que organiza as listas lado a lado */
-.container-listas {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    margin: 30px auto;
-    max-width: 1200px;
-}
-
-/* Caixa individual de cada lista */
-.lista-box {
-    flex: 1;
-    text-align: center;
-}
-
-/* Título acima da caixa de lista */
-.lista-box h2 {
-    text-shadow: 2px 2px 4px black;
-    margin-bottom: 15px;
-    color: #e4e0e0;
-    font-size: 20px;
-}
-
-/* Estilização da lista não ordenada dentro da caixa */
-.lista-box ul {
-    list-style-position: inside;
-    padding: 20px;
-    background-color: #689af7;
-    border-radius: 8px;
-    display: inline-block;
-    min-width: 200px;
-}
-
-/* Estilização da lista ordenada dentro da caixa */
-.lista-box ol {
-    list-style-position: inside;
-    padding: 15px;
-    background-color: #689af7;
-    border-radius: 8px;
-    display: inline-block;
-    min-width: 200px;
-}
-
-/* Itens das listas */
-.lista-box li {
-    padding: 8px 0;
-    text-align: left;
-}
+ 

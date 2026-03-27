@@ -14,7 +14,9 @@ Arquivos estáticos utilizados na aplicação.
  - images
   - `Favicon.png`: Ícone exibido na aba do navegador.
   - `PaginaInicial.png`: Imagem utilizada na página inicial.
-
+- midia 
+ - `audio-html.mp3`: áudio inserido na página.
+ 
 ### pages
 - `index.html`: Página principal do projeto.
 
