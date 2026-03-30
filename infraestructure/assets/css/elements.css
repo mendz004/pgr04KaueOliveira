@@ -5,15 +5,4 @@
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
-    background-image: url("../images/PaginaInicial.jpg"); /* Define uma imagem de fundo */
-    background-size: cover;  /* Faz a imagem cobrir toda a tela */
-    background-position: center;  /* Centraliza a imagem */
-    background-repeat: no-repeat;   /* Evita repetição da imagem */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
