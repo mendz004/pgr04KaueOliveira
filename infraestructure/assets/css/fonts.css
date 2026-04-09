@@ -160,6 +160,21 @@ main {
     padding: 0 30px;
 }
 
+/* Footer */
+footer {
+    background-color: var(--cor-verde-escuro);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     
