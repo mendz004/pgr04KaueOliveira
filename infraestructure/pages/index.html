@@ -9,14 +9,6 @@
     <!-- CSS interno -->
     <style>
 
-        .titulo-secao {
-            font-size: 2.5rem;
-            color: var(--cor-principal);
-            margin-bottom: 40px;
-            text-align: center;
-            font-weight: 700;
-        }
-
     
         /* Seção de boas-vindas */
         .secao-boas-vindas {
@@ -27,9 +19,10 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-
     </style>
 
+ <!-- Importa um arquivo ELEMENTS.CSS externo para estilização das fontes -->
+    <link rel="stylesheet" href="../assets/css/elements.css">
      <!-- Importa um arquivo FONTS.CSS externo para estilização das fontes -->
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <!-- Define o ícone da aba (favicon) do site -->
@@ -49,6 +42,16 @@
             <br>Registre receitas, acompanhe despesas e tenha uma visão clara de para onde
             <br>seu dinheiro está indo.
         </p>
+        
+        <!-- Menu de navegação -->
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="../../atividades/pages/atividade03.html">Atividade 03</a></li>
+                <li><a href="../../atividades/pages/atividade04.html">Atividade 04</a></li>
+                <li><a href="../../atividades/pages/atividade05.html">Atividade 05</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Conteúdo principal -->
@@ -72,15 +75,6 @@
 
         </section>
 
-        <!-- Botões de ação -->
-        <section>
-            <h2 class="titulo-secao">Próximos Passos</h2>
-            <div class="container-botoes">
-                <a href="../../atividades/pages/atividade03.html" class="btn btn-1">📚 Acesse a Atividade 03</a>
-                <a href="../../atividades/pages/atividade04.html" class="btn btn-2">📚 Acesse a Atividade 04</a>
-                <a href="../../atividades/pages/atividade05.html" class="btn btn-1">📚 Acesse a Atividade 05</a>
-            </div>
-        </section>
     </main>
 
     <!-- Rodapé -->
@@ -88,5 +82,6 @@
         <p>&copy; 2026 Gestor de Finanças Pessoais. Todos os direitos reservados.</p>
         <p>Desenvolvido para ajudar você a controlar suas finanças.</p>
     </footer>
+
 </body>
 </html>

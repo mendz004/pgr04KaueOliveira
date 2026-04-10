@@ -4,18 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 04</title>
-    
-<!--CSS interno-->
-    <style>
 
-        audio {
-            margin: 30px;
-        }
-        iframe {
-            margin: 30px;
-        }
-    </style>
-
+    <!-- Importa um arquivo ELEMENTS.CSS externo para estilização das fontes -->
+    <link rel="stylesheet" href="../../infraestructure/assets/css/elements.css">
     <!-- Importa um arquivo FONTS.CSS externo para estilização das fontes -->
     <link rel="stylesheet" href="../../infraestructure/assets/css/fonts.css">
      <!-- Define o ícone da aba (favicon) do site -->
@@ -32,6 +23,15 @@
         
         <p class="descricao">Nessa atividade, aprenderemos como inserir um áudio e um video em uma pagina HTML.</p>
             
+         <!-- Menu de navegação -->
+            <nav id="menu">
+                <ul>
+                    <li><a href="../../infraestructure/pages/index.html">Início</a></li>
+                    <li><a href="atividade03.html">Atividade 03</a></li>
+                    <li><a href="atividade04.html">Atividade 04</a></li>
+                    <li><a href="atividade05.html">Atividade 05</a></li>
+                </ul>
+            </nav>
     </header>
 
     <main>
@@ -46,10 +46,14 @@
     <!-- inserindo vídeo na página -->
          <h2 class="subtitulo">Inserindo Vídeo</h2>
 
+            <div class="video">
+
            <iframe width="560" height="315" src="https://www.youtube.com/embed/39IXFjD291U?si=9HvMdxXxIjANXkr7" 
            title="YouTube video player" frameborder="0" 
            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
 
     </main>
 
