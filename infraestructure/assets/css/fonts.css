@@ -1,5 +1,5 @@
 /* Reset básico para remover margens e espaçamentos padrão do navegador */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ header h1 {
     color: var(--cor-branco);
 }
 
- h2 {
+h2 {
     color: var(--cor-principal);
     margin-bottom: 20px;
     font-size: 2rem;
@@ -44,9 +44,11 @@ header h1 {
 }
 
 .subtitulo {
+    font-size: 2.5rem;
     color: var(--cor-principal);
-    margin-bottom: 20px;
-    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
 }
 
 
@@ -55,7 +57,8 @@ header h1 {
     from {
         opacity: 0;
         transform: translateY(-40px);
-}
+    }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -68,6 +71,7 @@ header h1 {
         opacity: 0;
         transform: translateY(40px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -93,15 +97,15 @@ header {
     animation: slideInDown 0.8s ease-out;
 }
 
- body {
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-            line-height: 1.6;
-            font-family: 'Arial', sans-serif;
-        }
- 
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
 a {
-color: var(--cor-azul);
+    color: var(--cor-azul);
 }
 
 
@@ -133,37 +137,28 @@ footer p {
 
 
 
-header {
-    padding: 50px 20px;
-}
+    header {
+        padding: 50px 20px;
+    }
 
-header h1 {
-    font-size: 2.5rem;
-}
+    header h1 {
+        font-size: 2.5rem;
+    }
 
-.descricao {
-    font-size: 1rem;
-}
+    .descricao {
+        font-size: 1rem;
+    }
 
-main {
-    padding: 0 15px;
-}
+    main {
+        padding: 0 15px;
+    }
 
-.container-botoes {
-    flex-direction: column;
-}
+    .container-botoes {
+        flex-direction: column;
+    }
 
-.btn {
-     width: 100%;
-}
+    .btn {
+        width: 100%;
+    }
 
 }
-
-.titulo-Secundario {
-    font-size: 2.5rem;
-    color: var(--cor-principal);
-    margin-bottom: 40px;
-    text-align: center;
-    font-weight: 700;
-}
-

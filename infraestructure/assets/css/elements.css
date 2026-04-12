@@ -1,5 +1,5 @@
 /* Reset básico para remover margens e espaçamentos padrão do navegador */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,11 +20,12 @@
 audio {
     margin: 30px;
 }
+
 /* Deixa o vídeo responsivo e centralizado */
 .video {
     position: relative;
     background-color: var(--cor-cinza);
-    padding-bottom: 59%; 
+    padding-bottom: 59%;
     height: 0;
     margin-left: -20px;
     margin-right: -20px;
@@ -101,6 +102,7 @@ nav#menu a:hover {
     text-align: center;
     min-width: 200px;
 }
+
 /* Dois estilos de botões*/
 /* Botão 1*/
 .btn-1 {
@@ -114,15 +116,106 @@ nav#menu a:hover {
     box-shadow: 0 6px 12px rgba(22, 163, 74, 0.4);
     transform: translateY(-2px);
 }
+
 /* Botão 2*/
 .btn-2 {
     background-color: var(--cor-azul);
     color: var(--cor-branco);
     box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+    margin-top: 10px;
 }
 
 .btn-2:hover {
     background-color: #1d4ed8;
     box-shadow: 0 6px 12px rgba(37, 99, 235, 0.4);
     transform: translateY(-2px);
+}
+
+/* Estilização da seção de funcionalidades */
+.container-funcoes {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.gestao-transacoes,
+.painel-calculos,
+.persistencia-dados {
+    background: var(--cor-branco);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.gestao-transacoes h2,
+.painel-calculos h2,
+.persistencia-dados h2 {
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.gestao-transacoes ul,
+.painel-calculos ul,
+.persistencia-dados ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gestao-transacoes li,
+.painel-calculos li,
+.persistencia-dados li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--cor-texto);
+}
+
+/* Estilos para o formulário de login */
+.sign-in {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.sign-in form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sign-in input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.form-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-links a {
+    display: block;
+    margin: 5px 0;
+    color: black;
+    text-decoration: none;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
 }

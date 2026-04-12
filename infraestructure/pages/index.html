@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título exibido na aba do navegador -->
     <title>Gestão de Finanças</title>
 
-    <!-- CSS interno -->
-    <style>
-
-    
-        /* Seção de boas-vindas */
-        .secao-boas-vindas {
-            background: var(--cor-branco);
-            border-radius: 10px;
-            padding: 40px;
-            margin: 50px 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-    </style>
-
- <!-- Importa um arquivo ELEMENTS.CSS externo para estilização das fontes -->
+    <!-- Importa um arquivo ELEMENTS.CSS externo para estilização das fontes -->
     <link rel="stylesheet" href="../assets/css/elements.css">
-     <!-- Importa um arquivo FONTS.CSS externo para estilização das fontes -->
+    <!-- Importa um arquivo FONTS.CSS externo para estilização das fontes -->
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <!-- Define o ícone da aba (favicon) do site -->
-    <Link rel="shortcut icon" href="../assets/images/Favicon.png"
-    type="images/png">
+    <Link rel="shortcut icon" href="../assets/images/Favicon.png" type="images/png">
 
 </head>
+
 <body>
     <!-- Cabeçalho principal -->
     <header>
         <!-- Título principal da página -->
         <h1>Bem-vindo ao seu Gestor de Finanças Pessoais</h1>
-        
-            <!-- Parágrafo descritivo do sistema
+
+        <!-- Parágrafo descritivo do sistema
              <br> é usado para quebra de linha -->
         <p class="descricao">Organize suas finanças de forma simples e prática.
             <br>Registre receitas, acompanhe despesas e tenha uma visão clara de para onde
             <br>seu dinheiro está indo.
         </p>
-        
+
         <!-- Menu de navegação -->
         <nav id="menu">
             <ul>
@@ -54,27 +40,72 @@
         </nav>
     </header>
 
-    <!-- Conteúdo principal -->
+    
     <main>
-        <!-- Seção de boas-vindas -->
-        <section class="secao-boas-vindas">
-            <h2>Por que usar nosso Gestor?</h2>
+        <!-- Formulário de login -->
+        <h2 class="subtitulo">Login</h2>
 
-            <p>
-                💡 <strong>Visão Clara das Finanças:</strong> Saiba exatamente para onde vai seu dinheiro a cada mês.
-            </p>
-            <p>
-                📊 <strong>Relatórios Detalhados:</strong> Analise seus gastos por categoria e identifique oportunidades de economia.
-            </p>
-            <p>
-                🎯 <strong>Metas Financeiras:</strong> Defina objetivos e acompanhe seu progresso em tempo real.
-            </p>
-            <p>
-                🔒 <strong>Dados Seguros:</strong> Suas informações financeiras são protegidas com segurança máxima.
-            </p>
+        <div class="sign-in">
+
+            <form action="http://localhost/ProjetoPrg04" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <label for="lembrar">
+                    <input type="checkbox" id="lembrar" name="lembrar"> Lembrar-me
+                </label>
+
+                <button class="btn btn-1" type="submit">Entrar</button>
+                <button class="btn btn-2" type="reset">Limpar</button>
+
+            </form>
+
+            <div class="form-links">
+                <a href="#">Esqueci minha senha</a>
+                <a href="../pages/criarNovaConta.html">Criar nova conta</a>
+
+            </div>
+
+
+        </div>
+
+        <!-- Funcionalidades do sistema -->
+        <h2 class="subtitulo">Funcionalidades</h2>
+
+        <section class="container-funcoes">
+
+            <div class="gestao-transacoes">
+                <h2>Gestão de Transações</h2>
+                <ul>
+                    <li><strong>Cadastro de Transações:</strong> Adicione receitas e despesas facilmente.</li>
+                    <li><strong>Listagem Dinâmica:</strong> Visualize todas as transações em tempo real.</li>
+                    <li><strong>Exclusão de Itens:</strong> Remova transações indesejadas com um clique.</li>
+                </ul>
+            </div>
+
+            <div class="painel-calculos">
+                <h2>Painel de Cálculos</h2>
+                <ul>
+                    <li> <strong>Cálculo de Totais:</strong> Soma automática de receitas e despesas.</li>
+                    <li> <strong>Saldo Atualizado:</strong> Veja seu saldo atual instantaneamente.</li>
+                    <li> <strong>Destaque Visual:</strong> Indicadores visuais para entradas e saídas.</li>
+                    <li> <strong>Relatórios Simples:</strong> Visão geral mensal dos seus gastos.</li>
+                </ul>
+            </div>
+
+            <div class="persistencia-dados">
+                <h2>Persistência de Dados</h2>
+                <ul>
+                    <li> <strong>Armazenamento Local:</strong> Dados salvos no dispositivo do usuário.</li>
+                    <li> <strong>Sincronização:</strong> Atualização automática dos dados em todos os dispositivos.</li>
+                </ul>
+            </div>
 
         </section>
-
+        
     </main>
 
     <!-- Rodapé -->
@@ -84,4 +115,5 @@
     </footer>
 
 </body>
+
 </html>
