@@ -17,6 +17,7 @@
     --transicao: all 0.3s ease;
 }
 
+
 audio {
     margin: 30px;
 }
@@ -243,11 +244,13 @@ nav#menu a:hover {
 /* Estilização da Tabela*/
 .tg {
     border-collapse: collapse;
-    border-color: #93a1a1;
     border-spacing: 0;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 100%;
-    table-layout: fixed;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* Tabela responsiva */
@@ -256,75 +259,127 @@ nav#menu a:hover {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+        margin: 10px;
+        box-shadow: none;
     }
 
     .tg th,
     .tg td {
-        padding: 12px 8px;
+        padding: 8px 6px;
+        font-size: 12px;
     }
 
-    .tg thead tr {
-        display: table;
-        width: 100%;
-        table-layout: fixed;
+    .tg th input[type="text"] {
+        width: 100px;
+        margin-left: 10px;
     }
 
-    .tg tbody tr {
-        display: table;
-        width: 100%;
-        table-layout: fixed;
+    .cadastrar {
+        width: 130px;
+        margin-left: 10px;
+        padding: 8px 12px;
+        font-size: 16px;
     }
 }
 
 /*Estilização do botão cadastrar da tabela*/
 .cadastrar {
-    width: 150px;
-    padding: 5px;
+    width: 160px;
+    padding: 10px 15px;
     margin-left: 17%;
+    border: 2px solid var(--cor-verde-escuro);
     border-radius: 10px;
-}
-.cadastrar:hover {
-    background-color: rgb(195, 195, 240);
+    background-color: var(--cor-principal);
     color: var(--cor-branco);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
     transition: var(--transicao);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cadastrar:hover {
+    background-color: var(--cor-verde-escuro);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-color: var(--cor-principal);
 }
 
 .tg td {
-    background-color: #fdf6e3;
-    border-color: #93a1a1;
+    background-color: var(--cor-branco);
     border-style: solid;
     border-width: 1px;
-    color: #002b36;
+    color: var(--cor-texto);
     font-family: Arial, sans-serif;
     font-size: 14px;
     overflow: hidden;
-    padding: 10px 5px;
+    padding: 12px 8px;
     word-break: normal;
+    transition: background-color 0.3s ease;
 }
 
 .tg th {
-    background-color: #657b83;
-    border-color: #93a1a1;
+    background-color: var(--cor-cinza);
     border-style: solid;
     border-width: 1px;
-    color: #fdf6e3;
+    color: var(--cor-branco);
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
     overflow: hidden;
-    padding: 10px 5px;
+    padding: 12px 8px;
     word-break: normal;
 }
 
 .tg .tg-0pky {
     border-color: inherit;
     text-align: left;
-    vertical-align: top
-    
+    vertical-align: top;
 }
 
 .tg .tg-0lax {
     text-align: left;
-    vertical-align: top
+    vertical-align: top;
+}
+
+/* Alternating row colors */
+.tg tbody tr:nth-child(even) td {
+    background-color: var(--cor-fundo);
+}
+
+/* Hover effect for rows */
+.tg tbody tr:hover td {
+    background-color: #e0f2fe;
+    cursor: pointer;
+}
+
+.tg button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.tg button:hover {
+    background-color: var(--cor-cinza);
+}
+
+
+.tg th input[type="text"] {
+    width: 120px;
+    padding: 6px 8px;
+    border: 1px solid var(--cor-cinza);
+    border-radius: 6px;
+    font-size: 14px;
+    margin-left: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.tg th input[type="text"]:focus {
+    outline: none;
+    border-color: var(--cor-principal);
 }
 
