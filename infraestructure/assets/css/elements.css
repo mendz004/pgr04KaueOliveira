@@ -79,6 +79,26 @@ nav#menu a:hover {
     background-color: var(--cor-verde-escuro);
 }
 
+/* Responsividade para o menu de navegação */
+@media (max-width: 768px) {
+    nav#menu ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav#menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav#menu a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 /* Container de navegação */
 .container-botoes {
     display: flex;
@@ -219,3 +239,92 @@ nav#menu a:hover {
 .form-links a:hover {
     text-decoration: underline;
 }
+
+/* Estilização da Tabela*/
+.tg {
+    border-collapse: collapse;
+    border-color: #93a1a1;
+    border-spacing: 0;
+    margin: 0 auto;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Tabela responsiva */
+@media (max-width: 768px) {
+    .tg {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tg th,
+    .tg td {
+        padding: 12px 8px;
+    }
+
+    .tg thead tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .tg tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+}
+
+/*Estilização do botão cadastrar da tabela*/
+.cadastrar {
+    width: 150px;
+    padding: 5px;
+    margin-left: 17%;
+    border-radius: 10px;
+}
+.cadastrar:hover {
+    background-color: rgb(195, 195, 240);
+    color: var(--cor-branco);
+    transition: var(--transicao);
+}
+
+.tg td {
+    background-color: #fdf6e3;
+    border-color: #93a1a1;
+    border-style: solid;
+    border-width: 1px;
+    color: #002b36;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    background-color: #657b83;
+    border-color: #93a1a1;
+    border-style: solid;
+    border-width: 1px;
+    color: #fdf6e3;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+    
+}
+
+.tg .tg-0lax {
+    text-align: left;
+    vertical-align: top
+}
+
