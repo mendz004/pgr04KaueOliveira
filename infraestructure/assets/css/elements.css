@@ -7,13 +7,13 @@
 
 /*Paleta de cores */
 :root {
-    --cor-principal: #16a34a;
-    --cor-verde-escuro: #166534;
     --cor-azul: #2563eb;
-    --cor-fundo: #f8fafc;
-    --cor-texto: #1e293b;
-    --cor-cinza: #cbd5f5;
+    --cor-01: #4f9a7b;
+    --cor-02: #1e293b;
+    --cor-03: #9ac2aa;
+    --cor-04: #f1f1e7;
     --cor-branco: #ffffff;
+    --cor--preto: #000000;
     --transicao: all 0.3s ease;
 }
 
@@ -25,7 +25,7 @@ audio {
 /* Deixa o vídeo responsivo e centralizado */
 .video {
     position: relative;
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-03);
     padding-bottom: 59%;
     height: 0;
     margin-left: -20px;
@@ -63,8 +63,7 @@ nav#menu ul {
 
 nav#menu li {
     display: inline;
-    background-color: var(--cor-verde-escuro);
-
+    background-color: var(--cor-01);
 }
 
 nav#menu a {
@@ -127,28 +126,24 @@ nav#menu a:hover {
 /* Dois estilos de botões*/
 /* Botão 1*/
 .btn-1 {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-01);
     color: var(--cor-branco);
     box-shadow: 0 4px 6px rgba(22, 163, 74, 0.3);
 }
 
 .btn-1:hover {
-    background-color: var(--cor-verde-escuro);
-    box-shadow: 0 6px 12px rgba(22, 163, 74, 0.4);
     transform: translateY(-2px);
 }
 
 /* Botão 2*/
 .btn-2 {
-    background-color: var(--cor-azul);
+    background-color: var(--cor-02);
     color: var(--cor-branco);
     box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
     margin-top: 10px;
 }
 
 .btn-2:hover {
-    background-color: #1d4ed8;
-    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.4);
     transform: translateY(-2px);
 }
 
@@ -164,7 +159,7 @@ nav#menu a:hover {
 .gestao-transacoes,
 .painel-calculos,
 .persistencia-dados {
-    background: var(--cor-branco);
+    background: var(--cor-03);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -176,7 +171,7 @@ nav#menu a:hover {
 .gestao-transacoes h2,
 .painel-calculos h2,
 .persistencia-dados h2 {
-    color: var(--cor-principal);
+    color: var(--cor-02);
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
@@ -193,7 +188,7 @@ nav#menu a:hover {
 .persistencia-dados li {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: var(--cor-texto);
+    color: var(--cor--preto);
 }
 
 /* Estilos para o formulário de login */
@@ -201,9 +196,8 @@ nav#menu a:hover {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: var(--cor-04);
 }
 
 .sign-in form {
@@ -219,7 +213,6 @@ nav#menu a:hover {
 .sign-in input {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
 }
@@ -233,7 +226,7 @@ nav#menu a:hover {
 .form-links a {
     display: block;
     margin: 5px 0;
-    color: black;
+    color: var(--cor-02);
     text-decoration: none;
 }
 
@@ -251,6 +244,7 @@ nav#menu a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    border-color: var(--cor--preto);
 }
 
 /* Tabela responsiva */
@@ -287,26 +281,23 @@ nav#menu a:hover {
     width: 160px;
     padding: 10px 15px;
     margin-left: 17%;
-    border: 2px solid var(--cor-verde-escuro);
+    border-color: var(--cor--preto);
     border-radius: 10px;
-    background-color: var(--cor-principal);
     color: var(--cor-branco);
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: var(--transicao);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px var(--cor--preto);
 }
 
 .cadastrar:hover {
-    background-color: var(--cor-verde-escuro);
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    border-color: var(--cor-principal);
+    box-shadow: 0 4px 12px var(--cor--preto);
 }
 
 .tg td {
-    background-color: var(--cor-branco);
+    background-color: var(--cor-03);
     border-style: solid;
     border-width: 1px;
     color: var(--cor-texto);
@@ -319,10 +310,9 @@ nav#menu a:hover {
 }
 
 .tg th {
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-02);
     border-style: solid;
     border-width: 1px;
-    color: var(--cor-branco);
     font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -344,7 +334,7 @@ nav#menu a:hover {
 
 /* Alternating row colors */
 .tg tbody tr:nth-child(even) td {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-04);
 }
 
 /* Hover effect for rows */
@@ -360,18 +350,18 @@ nav#menu a:hover {
     font-size: 16px;
     padding: 4px;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    
 }
 
 .tg button:hover {
-    background-color: var(--cor-cinza);
+    transition: background-color 0.3s ease;
 }
 
 
 .tg th input[type="text"] {
     width: 120px;
     padding: 6px 8px;
-    border: 1px solid var(--cor-cinza);
+    border: 1px solid var(--cor--preto);
     border-radius: 6px;
     font-size: 14px;
     margin-left: 20px;
@@ -380,6 +370,6 @@ nav#menu a:hover {
 
 .tg th input[type="text"]:focus {
     outline: none;
-    border-color: var(--cor-principal);
+    
 }
 

@@ -9,7 +9,7 @@ Arquivos estáticos utilizados na aplicação.
 
 - css
  - `fonts.css`: Arquivo responsavel pela estilização das fontes da pagina.
- - `elements.css`: Arquivo responsavel pela estilização dos elementos da pagina EX: imagens.
+ - `elements.css`: Arquivo responsavel pela estilização dos elementos da pagina.
 
  - images
   - `Favicon.png`: Ícone exibido na aba do navegador.
