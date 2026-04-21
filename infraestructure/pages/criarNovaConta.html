@@ -9,47 +9,62 @@
     <link rel="stylesheet" href="../../infraestructure/assets/css/elements.css">
     <link rel="stylesheet" href="../../infraestructure/assets/css/fonts.css">
     <link rel="shortcut icon" href="../../infraestructure/assets/images/Favicon.png" type="image/png">
-
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
 
 <body>
 
     <main>
-                <!-- Formulario de Cadastro -->
-        <h2 class="subtitulo">Crie sua conta</h2>
+        <!-- Formulario de Cadastro -->
+        <section class="login-section">
+            <div class="container">
+                <h2 class="section-title">Criar conta</h2>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <div class="login-card">
 
-        <div class="sign-in">
+                            <form action="http://localhost/ProjetoPrg04" method="post">
 
-            <form action="http://localhost/ProjetoPrg04" method="post">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Digite seu nome" required>
 
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                                <label for="name">Sobrenome</label>
+                                <input type="text" id="sobrenome" name="sobrenome" class="form-control"
+                                    placeholder="Digite seu sobrenome" required>
 
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Digite seu email" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu email">
+                                <label for="senha" class="mt-3">Senha</label>
+                                <input type="password" id="senha" name="senha" class="form-control"
+                                    placeholder="Digite sua senha" required>
 
-                <label for="dataNascimento">Data de Nascimento:</label>
-                <input type="date" id="dataNascimento" name="dataNascimento">
+                                <label for="senha" class="mt-3">Confirme a senha</label>
+                                <input type="password" id="senha" name="senha" class="form-control"
+                                    placeholder="Digite sua senha" required>
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Crie sua senha">
-                
-                <label for="confirmarSenha">Confirmar Senha:</label>
-                <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha">
-
-                <button class="btn btn-1" type="submit">Criar Conta</button>
-
-
-            </form>
+                                <button class="btn btn-success" type="submit">
+                                    Criar conta
+                                </button>
+                            </form>
 
 
-        </div>
-
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NUMB+lb6GvNstWQ7AddKorjH9+w"
+        crossorigin="anonymous"></script>
 
     <footer>
         <p>&copy; 2026 Gestor de Finanças Pessoais. Todos os direitos reservados.</p>

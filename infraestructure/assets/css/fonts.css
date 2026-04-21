@@ -19,7 +19,7 @@
 
 /* Estilização do título principal */
 header h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -36,7 +36,7 @@ h2 {
 
 /* Tagline - subtítulo atrativo */
 .descricao {
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-weight: 300;
     margin-bottom: 30px;
     animation: slideInUp 0.8s ease-out 0.2s both;
@@ -52,7 +52,7 @@ h2 {
 }
 
 
-/* Animação deslizar para baixo */
+/* Animações */
 @keyframes slideInDown {
     from {
         opacity: 0;
@@ -65,7 +65,6 @@ h2 {
     }
 }
 
-/* Animação deslizar para cima */
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -91,7 +90,7 @@ p {
 header {
     background: linear-gradient(135deg, var(--cor-01) 0%, var(--cor-02) 100%);
     color: var(--cor-02);
-    padding: 80px 30px;
+    padding: 50px 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: slideInDown 0.8s ease-out;
@@ -113,7 +112,8 @@ a {
 main {
     max-width: 1200px;
     margin: 60px auto;
-    padding: 0 30px;
+    padding: 0 15px;
+    flex: 1;
 }
 
 /* Footer */
@@ -130,33 +130,27 @@ footer p {
     color: var(--cor-02);
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Header hero section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--cor-01) 0%, var(--cor-02) 100%);
+            color: var(--cor-branco);
+            padding: 80px 20px;
+            text-align: center;
+            animation: slideInDown 0.8s ease-out;
+        }
 
+        .hero-section h1 {
+            font-size: clamp(2rem, 8vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+        }
 
-
-    header {
-        padding: 50px 20px;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    .descricao {
-        font-size: 1rem;
-    }
-
-    main {
-        padding: 0 15px;
-    }
-
-    .container-botoes {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-    }
-
-}
+        .hero-section .lead {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: var(--cor-04);
+            animation: slideInUp 0.8s ease-out 0.2s both;
+        }
